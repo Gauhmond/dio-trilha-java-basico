@@ -1,32 +1,33 @@
-public class SmartTV {
+public class SmartTv {
     boolean ligada = false;
     int canal = 1;
-    int volume = 25;
+    int volume = 1;
 
-    public void ligar(){
+    public void ligarTv (){
         ligada = true;
     }
-    public void desligar(){
+
+    public void desligarTv () {
         ligada = false;
     }
 
-    public void aumentarVolume(){
+    public void aumentarVolume () {
         volume++;
     }
-    
-    public void diminuirVolume(){
+
+    public void diminuirVolume () {
         volume--;
     }
 
-    public void aumentarCanal(){
+    public void aumentarCanal() {
         canal++;
     }
 
-    public void diminuirCanal(){
+    public void diminuirCanal() {
         canal--;
     }
 
-    public void selecionarCanal (int novoCanal){
+    public void escolherCanal(int novoCanal){
         canal = novoCanal;
     }
 }

@@ -1,20 +1,24 @@
 public class Usuario {
-    public static void main(String[] args) throws Exception {
-        SmartTV smartTV = new SmartTV();
+    public static void main (String [] args){
+        SmartTv smartTv = new SmartTv();
+        System.out.println("Estado da TV: "+ smartTv.ligada);
+        System.out.println("Canal: "+ smartTv.canal);
+        System.out.println("Volume: "+ smartTv.volume);
 
-        System.out.println("TV está ligada? " + smartTV.ligada);
-        System.out.println("Volume: " + smartTV.volume);
-        System.out.println("Canal: " + smartTV.canal);
-        System.out.println("------------------------");
-    
-        smartTV.ligar();
-        smartTV.aumentarVolume();
-        smartTV.aumentarVolume();
-        smartTV.aumentarVolume();
-        smartTV.selecionarCanal(15);
+        smartTv.ligarTv();
+        System.out.println("Estado da TV: "+ smartTv.ligada);
 
-        System.out.println("TV está ligada? " + smartTV.ligada);
-        System.out.println("Volume Atual: " + smartTV.volume);
-        System.out.println("Canal Atual: " + smartTV.canal);
+        smartTv.desligarTv();
+        System.out.println("Estado de TV: "+ smartTv.ligada);
+
+        smartTv.ligarTv();
+        System.out.println("Estado da TV: "+ smartTv.ligada);
+
+        smartTv.escolherCanal(13);
+        System.out.println("Estado de TV: " + smartTv.ligada);
+        smartTv.aumentarVolume();
+        smartTv.aumentarVolume();
+        System.out.println("Canal: "+ smartTv.canal);
+        System.out.println("Volume: " + smartTv.volume);
     }
 }
